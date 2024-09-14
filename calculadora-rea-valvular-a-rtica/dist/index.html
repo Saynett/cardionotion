@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - calculadora área valvular aórtica</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora AVA</title>
+</head>
+<body>
+    <h1>Calculadora de AVA</h1>
+    
+    <label for="tsvi">TSVI (en milímetros):</label><br>
+    <input type="number" id="tsvi" placeholder="Introduce TSVI" step="1" required><br>
+
+    <label for="ivt_tsv">IVT-TSVI (en centímetros):</label><br>
+    <input type="number" id="ivt_tsv" placeholder="Introduce IVT-TSVI" step="1" required><br>
+
+    <label for="ivt_ao">IVT-AO (en centímetros):</label><br>
+    <input type="number" id="ivt_ao" placeholder="Introduce IVT-AO" step="1" required><br>
+
+    <button onclick="calcularAVA()">Calcular AVA</button>
+
+    <div class="result">
+        Resultado AVA (en cm<sup>2</sup>): <span id="resultadoAVA"></span>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
